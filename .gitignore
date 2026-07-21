@@ -1,0 +1,9 @@
+# Ignore large dataset and local artifacts
+box office/movies_dataset.csv
+box office/.ipynb_checkpoints/
+box office/instance/
+*.db
+*.pyc
+__pycache__/
+.vscode/
+.DS_Store

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="col-md-6 mx-auto card shadow-lg result-box">
+    <h3 class="text-warning">Prediction Result</h3>
+
+    <h1 class="text-success mt-3">
+        ${{ result }}
+    </h1>
+
+    <p class="text-muted">
+        Estimated One-Week Sales Revenue
+    </p>
+
+    <div class="mt-4">
+        <a href="/predict" class="btn btn-outline-primary me-2">Predict Another</a>
+        <a href="/logout" class="btn btn-outline-danger">Logout</a>
+    </div>
+</div>
+{% endblock %}

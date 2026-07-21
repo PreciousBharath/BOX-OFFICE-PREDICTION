@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3 class="text-center text-warning mb-4">Enter Movie Details</h3>
+
+<form method="POST" class="row g-3">
+
+<!-- TITLE -->
+<div class="col-md-4">
+    <label class="form-label text-light">Movie Title</label>
+    <select name="title" class="form-control dark-input" required>
+        <option value="">Select Title</option>
+        {% for t in titles %}
+        <option value="{{ t }}">{{ t }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<!-- GENRE -->
+<div class="col-md-4">
+    <label class="form-label text-light">Genre</label>
+    <select name="genre" class="form-control dark-input" required>
+        <option value="">Select Genre</option>
+        {% for g in genres %}
+        <option value="{{ g }}">{{ g }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<!-- DIRECTOR -->
+<div class="col-md-4">
+    <label class="form-label text-light">Director</label>
+    <select name="director" class="form-control dark-input" required>
+        <option value="">Select Director</option>
+        {% for d in directors %}
+        <option value="{{ d }}">{{ d }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<!-- ACTOR -->
+<div class="col-md-4">
+    <label class="form-label text-light">Lead Actor</label>
+    <select name="actor" class="form-control dark-input" required>
+        <option value="">Select Lead Actor</option>
+        {% for a in actors %}
+        <option value="{{ a }}">{{ a }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<!-- COUNTRY -->
+<div class="col-md-4">
+    <label class="form-label text-light">Country</label>
+    <select name="country" class="form-control dark-input" required>
+        <option value="">Select Country</option>
+        {% for c in countries %}
+        <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<!-- RELEASE DATE -->
+<div class="col-md-4">
+    <label class="form-label text-light">Release Year</label>
+    <input type="number" name="year" class="form-control dark-input" required>
+</div>
+
+<div class="col-md-4">
+    <label class="form-label text-light">Release Month</label>
+    <input type="number" name="month" class="form-control dark-input" required>
+</div>
+
+<div class="col-md-4">
+    <label class="form-label text-light">Release Day</label>
+    <input type="number" name="day" class="form-control dark-input" required>
+</div>
+
+<!-- FINANCIAL DATA -->
+<div class="col-md-4">
+    <label class="form-label text-light">Budget (USD)</label>
+    <input type="number" name="budget" class="form-control dark-input" required>
+</div>
+
+<div class="col-md-4">
+    <label class="form-label text-light">US Box Office</label>
+    <input type="number" name="us_box" class="form-control dark-input" required>
+</div>
+
+<div class="col-md-4">
+    <label class="form-label text-light">Global Box Office</label>
+    <input type="number" name="global_box" class="form-control dark-input" required>
+</div>
+
+<!-- RATINGS -->
+<div class="col-md-4">
+    <label class="form-label text-light">Opening Day Sales</label>
+    <input type="number" name="opening" class="form-control dark-input" required>
+</div>
+
+<div class="col-md-4">
+    <label class="form-label text-light">IMDb Rating</label>
+    <input type="number" step="0.1" name="imdb" class="form-control dark-input" required>
+</div>
+
+<div class="col-md-4">
+    <label class="form-label text-light">Rotten Tomatoes Score</label>
+    <input type="number" name="rt" class="form-control dark-input" required>
+</div>
+
+<div class="col-md-6">
+    <label class="form-label text-light">IMDb Votes</label>
+    <input type="number" name="imdb_votes" class="form-control dark-input" required>
+</div>
+
+<div class="col-md-6">
+    <label class="form-label text-light">RT Votes</label>
+    <input type="number" name="rt_votes" class="form-control dark-input" required>
+</div>
+
+<!-- SUBMIT -->
+<div class="col-12 text-center mt-4">
+    <button class="btn btn-warning btn-lg px-5 fw-bold">
+        Predict Sales
+    </button>
+</div>
+
+</form>
+
+{% endblock %}

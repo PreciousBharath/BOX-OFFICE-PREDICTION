@@ -1,0 +1,77 @@
+/* ===== GLOBAL ===== */
+.dark-body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+.dark-nav {
+    background-color: #111827;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+/* ===== CARDS ===== */
+.card {
+    background-color: #1f2933;
+    border: none;
+    border-radius: 14px;
+    color: #e5e7eb;
+}
+
+.card h1, .card h3, .card h4 {
+    color: #f9fafb;
+}
+
+/* ===== INPUTS ===== */
+.form-control {
+    background-color: #111827;
+    border: 1px solid #374151;
+    color: #f9fafb;
+}
+
+.form-control:focus {
+    background-color: #111827;
+    color: #ffffff;
+    border-color: #f59e0b;
+    box-shadow: none;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+    background: linear-gradient(135deg, #f59e0b, #f97316);
+    border: none;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-outline-primary {
+    border-color: #f59e0b;
+    color: #f59e0b;
+}
+
+.btn-outline-primary:hover {
+    background-color: #f59e0b;
+    color: #000;
+}
+
+/* ===== TEXT ===== */
+.text-muted {
+    color: #9ca3af !important;
+}
+
+/* ===== FORMS ===== */
+form {
+    background-color: #1f2933;
+    padding: 25px;
+    border-radius: 14px;
+}
+
+/* ===== RESULT ===== */
+.result-box {
+    text-align: center;
+    padding: 30px;
+}
